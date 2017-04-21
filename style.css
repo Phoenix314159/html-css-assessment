@@ -1,76 +1,101 @@
-body {
+body{
     background-image: url("./img/main-bg.jpeg");
+    background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
-
-nav {
-    margin-top: 4vh;
-    color: white;
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 35px;
+.nav{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-nav .icons {
+.nav span{
+    padding: 0 13vw;
+    color: white;
+    font-size: 35px;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+.hamburger{
+    display: none;
+
+}
+.circle{
+    border-radius: 100%;
+    border: 2px white solid;
+    display:none;
+}
+.facebook{
+    display: none;
+}
+.twitter{
     display: none;
 }
 
-section {
+@media screen and (max-width: 769px) {
+    .nav span{
+        display: none;
+    }
+    .hamburger{
+        margin-left: 2vw;
+        margin-top: .5vh;
+        display: inline-block;
+        color: white;
+        padding: 1vh 2.5vw 1vh 1vw;
+        width:5%;
+        height: 5%;
+        min-width: 2%;
+        font-size:48px;
+
+    }
+    .facebook{
+        margin-top: 1vh;
+        display: inline;
+        color: white;
+        padding: 0 2vw ;
+        float: right;
+        font-size:48px;
+    }
+    .twitter{
+        margin-top: 1vh;
+        margin-left: 40vw;
+        display: inline;
+        font-size:48px;
+        color: white;
+        padding: 0 2vw;
+        float: right;
+    }
+    .circle{
+        border-radius: 100%;
+        border: 2px white solid;
+        display:inline;
+    }
+}
+.headline{
     text-align: center;
-    font-size: 25px;
-    line-height: 1vh;
-    margin-top: 36vh;
+    margin-top: 25vh;
     color: white;
-    font-family: 'Rubik Mono One', sans-serif;
-    white-space: nowrap;
+    line-height: 4vh;
+}
+.headline h1{
+    font-size: 100px;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+.headline h3{
+    font-size:40px;
+    font-family: 'Archivo Black', sans-serif;
+
 }
 
-.your {
-    font-size: 120px;
-}
 
-.bottom-arrow {
+.bottom-arrow{
     margin: 20vh 47vw 0 47vw;
     border-radius: 100%;
     background-color: white;
-    font-size: 48px;
-    color: black;
-    padding: 2vh 1vw;
-}
+    font-size:48px;
+    color:black;
 
-@media only screen and (max-width: 768px) {
-    .button {
-        display: none;
-    }
 
-    nav .icons {
-        display: inline-flex;
-        flex-wrap: nowrap;
-    }
 
-    .hamburger {
-        margin-right: 48vw;
-        margin-top: -2vh;
-        padding: 3%;
-        border: solid 2px white;
-        border-radius: 100%;
-        width:80%;
-    }
-
-    .facebook {
-        padding: 0 2vw;
-    }
-
-    .twitter {
-        padding: 0 5vw;
-    }
-
-    nav span {
-        display: none;
-    }
 }
