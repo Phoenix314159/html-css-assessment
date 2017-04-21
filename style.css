@@ -1,0 +1,72 @@
+body {
+    background-image: url("./img/main-bg.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    margin-top: 2vh;
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav .icons {
+    display: none;
+}
+
+section {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1vh;
+    margin-top: 36vh;
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+    white-space: nowrap;
+}
+
+.your {
+    font-size: 120px;
+}
+
+.bottom-arrow {
+    margin: 20vh 47vw 0 47vw;
+    border-radius: 100%;
+    background-color: white;
+    font-size: 48px;
+    color: black;
+    padding: 2vh 1vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        display: none;
+    }
+
+    nav .icons {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .hamburger {
+        margin-right: 48vw;
+        padding: 0 2vw;
+    }
+
+    .facebook {
+        padding: 0 2vw;
+    }
+
+    .twitter {
+        padding: 0 5vw;
+    }
+
+    nav span {
+        display: none;
+    }
+}
